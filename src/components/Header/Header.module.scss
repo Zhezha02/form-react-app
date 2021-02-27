@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  background-color: gray;
+  align-items: center;
+}
+
+.link{
+  padding: 10px 15px;
+  color: white;
+  border: 1px solid white;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: transparent;
+  text-decoration: none;
+}
