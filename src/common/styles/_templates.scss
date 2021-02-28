@@ -1,0 +1,31 @@
+@import './variables';
+
+%formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+
+  & > * {
+    margin-bottom: 15px;
+  }
+}
+
+%submitBtn {
+  width: 100%;
+  padding: 20px;
+
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+  background-color: #28d2d0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}

@@ -1,15 +1,21 @@
+@import '../../../common/styles/variables';
+
 .wrapper {
   position: relative;
   display: block;
+  width: 100%;
+
 }
 .input {
   padding: 20px;
 
   border: 1px solid gray;
   border-radius: 5px;
-  
+  width: inherit;
+
   font-size: 1rem;
   color: #9ca8b7;
+  background-color: white;
 }
 .validInput {
   border-color: green;
@@ -19,9 +25,6 @@
 }
 
 .errorMessage {
-  --bg-color-error: #ffeef0;
-  --error-text-color: #86181d;
-
   position: absolute;
   top: 115%;
   left: 0;
