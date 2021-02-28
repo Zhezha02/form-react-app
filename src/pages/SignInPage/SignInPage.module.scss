@@ -1,0 +1,13 @@
+@import '../../common/styles/variables';
+%common {
+  background-color: var(--accent-color);
+  color: white;
+}
+.container {
+  @extend %common;
+  margin: 0 auto;
+}
+
+.header {
+  @extend %common;
+}

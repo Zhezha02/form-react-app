@@ -1,10 +1,10 @@
 @import '../../../common/styles/templates';
 
-.container{
+.container {
   @extend %formContainer;
-  
+
 }
 
-.logInBtn{
- @extend %submitBtn;
+.logInBtn {
+  @extend %submitBtn;
 }

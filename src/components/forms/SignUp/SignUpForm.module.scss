@@ -1,0 +1,23 @@
+@import '../../../common/styles/templates';
+@import '../../../common/styles/variables';
+
+.container{
+  @extend %formContainer;
+  & > * {
+    width: 100%;
+    @media screen and (min-width:$md) {
+    width: 48%;
+      
+    } 
+  }
+   @media screen and (min-width:$md) {
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-between;
+   }
+}
+
+.signUpBtn{
+ @extend %submitBtn;
+ width:100%;
+}
