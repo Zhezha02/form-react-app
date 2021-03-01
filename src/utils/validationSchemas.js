@@ -10,7 +10,7 @@ export const EMAIL_SCHEMA = Yup.string()
 
 export const PASSWORD_SCHEMA = Yup.string()
   .matches(
-    /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/,
+    /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/,
     'Password must contain 8 char and so on...'
   )
   .required();
@@ -31,4 +31,5 @@ export const SIGN_UP_SCHEMA = Yup.object({
   passwordConfirmation: Yup.string()
     .oneOf([Yup.ref('password'), null], 'Passwords must match')
     .required(),
+  userRole: Yup.string().required('A radio option is required'),
 });
