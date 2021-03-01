@@ -5,12 +5,11 @@
   position: relative;
   display: block;
   width: inherit;
-  // flex-basis: 90%;
 }
 .input {
   padding: 20px;
 
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-radius: 5px;
   width: 100%;
 
@@ -19,7 +18,7 @@
   background-color: white;
 }
 .validInput {
-  border-color: #18a518;
+  border-color: #58bf58;
 }
 .errorInput {
   border-color: red;
