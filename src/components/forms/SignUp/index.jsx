@@ -35,22 +35,22 @@ const SignUpForm = props => {
               placeholder='Password Confirmation'
             />
 
-            {/* <label>
-              <Field type='radio' name='joinAs' value='buyer' />
-              <h1>Join As a Buyer</h1>
-              <p>
+            <label className={styles.radioLabel}>
+              <Field className={styles.radioBtn} type='radio' name='joinAs' value='buyer' />
+              <h1 className={styles.radioHeader}>Join As a Buyer</h1>
+              <p className={styles.radioSubHeader}>
                 I am looking for a Name, Logo or Tagline for my business, brand
                 or product.
               </p>
             </label>
-            <label>
-              <Field type='radio' name='joinAs' value='creative' />
-              <h1>Join As a Creative or Marketplace Seller</h1>
-              <p>
+            <label className={styles.radioLabel}>
+              <Field className={styles.radioBtn} type='radio' name='joinAs' value='creative' />
+              <h1 className={styles.radioHeader}>Join As a Creative or Marketplace Seller</h1>
+              <p className={styles.radioSubHeader}>
                 I plan to submit name ideas, Logo designs or sell names in
                 Domain Marketplace.
               </p>
-            </label> */}
+            </label>
             <Field
               className={styles.signUpBtn}
               type='submit'
