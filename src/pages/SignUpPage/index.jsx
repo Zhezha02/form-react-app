@@ -7,10 +7,13 @@ import styles from './SignUpPage.module.scss';
 const SignUpPage = () => {
   return (
     <div className={styles.container}>
-      <Header link={{ path: '/', description: 'SignIn' }} />
+      <Header link={{ path: '/', description: 'Login' }} />
       <h1 className={styles.heading}>Create an account</h1>
-      <h2>We always keep yout name and email address private</h2>
-      <SignUpForm/>
+      <h2 className={styles.subHeading}>We always keep yout name and email address private</h2>
+      <SignUpForm />
+      <p className={styles.content}>
+        By clicking this button, you agree to our <a className={styles.link} href='https://www.squadhelp.com/Terms&Conditions'>Terms of Service.</a>
+      </p>
     </div>
   );
 };
@@ -18,9 +21,3 @@ const SignUpPage = () => {
 // SignUpPage.propTypes = {};
 
 export default SignUpPage;
-
-
-
-
-
-

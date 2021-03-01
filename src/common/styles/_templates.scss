@@ -12,6 +12,9 @@
   @media screen and (min-width:$sm) {
     padding: 20px 40px;
   }
+  @media screen and (min-width:$md) {
+    padding: 0;
+  }
   & > * {
     margin-bottom: 15px;
   }

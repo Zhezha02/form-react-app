@@ -13,11 +13,14 @@
 
 
 .heading{
+
   text-transform: uppercase;
+  font-size: 2rem;
+  margin: 25px auto;
   @media screen and (min-width: $lg) {
-    margin-top: 30px;
+    margin: 30px auto;
   }
   @media screen and (min-width: $xl) {
-    margin-top: 50px;
+    margin: 50px auto;
   }
 }

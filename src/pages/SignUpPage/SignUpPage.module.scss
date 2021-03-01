@@ -9,20 +9,32 @@
   min-height: 100vh;
   text-align: center;
   padding: 0 20px;
+
 }
 
 
 .heading{
+  margin-top: 40px;
   text-transform: uppercase;
   font-size: 2rem;
+  font-weight: 900;
   @media screen and (min-width: $lg) {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   @media screen and (min-width: $xl) {
     margin-top: 50px;
   }
 }
+.subHeading{
 
-.form{
-  align-self: center;
+font-size: 1.1rem;
+max-width: 70%;
+margin: 20px auto;
+}
+
+.link{
+  color: inherit;
+}
+.content{
+padding-bottom: 50px;
 }
