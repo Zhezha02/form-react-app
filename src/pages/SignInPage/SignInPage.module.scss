@@ -6,8 +6,24 @@
 .container {
   @extend %common;
   margin: 0 auto;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .header {
   @extend %common;
+}
+.heading{
+  text-transform: uppercase;
+  @media screen and (min-width: $lg) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: $xl) {
+    margin-top: 50px;
+  }
+}
+
+.form{
+  align-self: center;
 }

@@ -1,17 +1,39 @@
+@import '../../common/styles/variables';
 .container {
   display: flex;
-  padding: 50px;
-  justify-content: space-between;
-  background-color: gray;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  & > * {
+    margin: 10px 20px;
+  }
+  @media screen and (min-width: $sm) {
+    justify-content: space-between;
+    & > * {
+      margin: 0;
+    }
+    padding: 20px;
+
+  }
+  @media screen and (min-width: $md) {
+    padding: 30px;
+  }
+  @media screen and (min-width: $lg) {
+    padding: 50px;
+  }
+  @media screen and (min-width: $lg) {
+    padding: 80px;
+  }
 }
 
-.link{
+.link {
   padding: 10px 15px;
-  color: white;
   border: 1px solid white;
-  font-weight: 700;
   border-radius: 5px;
+  
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
   background-color: transparent;
   text-decoration: none;
 }
