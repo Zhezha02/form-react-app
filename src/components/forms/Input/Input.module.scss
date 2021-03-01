@@ -1,15 +1,16 @@
 @import '../../../common/styles/variables';
+@import '../../../common/styles/templates';
 
 .wrapper {
   position: relative;
   display: block;
   width: inherit;
-// flex-basis: 90%;
+  // flex-basis: 90%;
 }
 .input {
   padding: 20px;
 
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 5px;
   width: 100%;
 
@@ -18,46 +19,12 @@
   background-color: white;
 }
 .validInput {
-  border-color: green;
+  border-color: #18a518;
 }
 .errorInput {
   border-color: red;
 }
 
 .errorMessage {
-  position: absolute;
-  top: 115%;
-  left: 0;
-  z-index: 10;
-
-  max-width: inherit;
-  padding: 10px;
-  border: 1px solid red;
-  border-radius: 5px;
-
-  color: var(--error-text-color);
-  font-size: 0.8rem;
-  background-color: var(--bg-color-error);
-  $position-left: 20px;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    width: 0;
-    height: 0;
-  }
-  &::before {
-    left: $position-left;
-    z-index: 16;
-    border: 7px solid transparent;
-    border-bottom: 7px solid red;
-  }
-  &::after {
-    left: $position-left + 1px;
-    z-index: 20;
-    border: 6px solid transparent;
-    border-bottom: 6px solid var(--bg-color-error);
-  }
+  @extend %errorBubble;
 }

@@ -20,25 +20,36 @@
   @extend %submitBtn;
   width: 100%;
 }
-.radioLabel{
+.radioLabel {
+  margin: 10px 0;
   padding: 10px;
   padding-left: 30px;
-  width:100%;
+  width: 100%;
   position: relative;
   border: 1px solid white;
   text-align: left;
-  // align-self: flex-start;
 }
 
-.radioBtn{
-position: absolute;
-left:0;
-top:20%;
+.radioBtn {
+  position: absolute;
+  left: 0;
+  top: 20%;
 }
-.radioHeader{
+.radioHeader {
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
-.radioSubHeader{
+.radioSubHeader {
   font-size: 0.7rem;
+}
+
+.errorMessage {
+  @extend %errorBubble;
+}
+
+.radioBtnContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
 }

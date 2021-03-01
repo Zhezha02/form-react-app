@@ -4,7 +4,7 @@ import SignInForm from '../../components/forms/SignIn';
 import Header from '../../components/Header';
 import styles from './SignInPage.module.scss';
 
-const SignInPage = props => {
+const SignInPage = () => {
   const onSubmit = values => {
     console.log(values);
   };
