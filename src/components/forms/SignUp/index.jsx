@@ -25,7 +25,7 @@ const SignUpForm = props => {
       {() => {
         return (
           <Form className={styles.container}>
-            {/* <Input name='firstName' placeholder='First name' />
+            <Input name='firstName' placeholder='First name' />
             <Input name='lastName' placeholder='Last name' />
             <Input name='displayName' placeholder='Display name' />
             <Input name='email' placeholder='Email address' />
@@ -34,7 +34,7 @@ const SignUpForm = props => {
               name='passwordConfirmation'
               type='password'
               placeholder='Password Confirmation'
-            /> */}
+            />
             <div className={styles.radioBtnContainer}>
               <label className={styles.radioLabel}>
                 <Field
