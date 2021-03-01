@@ -28,8 +28,7 @@ export const SIGN_UP_SCHEMA = Yup.object({
     .required(),
   email: EMAIL_SCHEMA,
   password: PASSWORD_SCHEMA,
-  passwordConfirmation: Yup.string().oneOf(
-    [Yup.ref('password'), null],
-    'Passwords must match'
-  ),
+  passwordConfirmation: Yup.string()
+    .oneOf([Yup.ref('password'), null], 'Passwords must match')
+    .required(),
 });

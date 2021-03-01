@@ -12,7 +12,7 @@ const SignInPage = props => {
     <div className={styles.container}>
       <Header link={{ path: '/sign-up', description: 'SignUp' }}  />
       <h1 className={styles.heading}>Login to your Account</h1>
-      <SignInForm className={styles.form} onSubmit={onSubmit} />
+      <SignInForm onSubmit={onSubmit} />
     </div>
   );
 };
