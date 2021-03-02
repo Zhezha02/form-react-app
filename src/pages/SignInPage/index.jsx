@@ -3,6 +3,8 @@ import SignInForm from '../../components/forms/SignIn';
 // import PropTypes from 'prop-types';
 import Header from '../../components/Header';
 import styles from './SignInPage.module.scss';
+import { Link } from 'react-router-dom';
+
 
 const SignInPage = () => {
   const onSubmit = values => {
@@ -10,7 +12,11 @@ const SignInPage = () => {
   };
   return (
     <div className={styles.container}>
-      <Header link={{ path: '/sign-up', description: 'SignUp' }}  />
+      <Header>
+        <Link to='/sign-up' className={styles.btnToLogin}>
+          SignUp
+        </Link>
+      </Header>
       <h1 className={styles.heading}>Login to your Account</h1>
       <SignInForm onSubmit={onSubmit} />
     </div>

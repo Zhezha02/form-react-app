@@ -7,7 +7,7 @@ function App () {
   return (
     <Router>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path={['/', '/login']}>
           <SignInPage />
         </Route>
         <Route path='/sign-up'>
