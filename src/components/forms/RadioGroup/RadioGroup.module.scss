@@ -1,0 +1,29 @@
+@import '../../../common/styles/templates';
+
+.radioBtnContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.radioLabel {
+  margin: 10px 0;
+  padding: 10px;
+  padding-left: 30px;
+  width: 100%;
+  position: relative;
+  border: 1px solid white;
+  text-align: left;
+}
+
+.radioBtn {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+
+.errorMessage {
+  @extend %errorBubble;
+  top:100%
+}
+
