@@ -17,26 +17,20 @@ const initialValues = {
 };
 
 const SignUpForm = props => {
-  const inputBuyer = (
-    <>
-      <h1 className={styles.radioHeader}>Join As a Buyer</h1>
-      <p className={styles.radioSubHeader}>
-        I am looking for a Name, Logo or Tagline for my business, brand or
-        product.
-      </p>
-    </>
-  );
-  const inputCreative = (
-    <>
-      <h1 className={styles.radioHeader}>
-        Join As a Creative or Marketplace Seller
-      </h1>
-      <p className={styles.radioSubHeader}>
-        I plan to submit name ideas, Logo designs or sell names in Domain
-        Marketplace.
-      </p>
-    </>
-  );
+  //Cтили для радио поля !!!!!!!!
+
+  // const inputCreative = (
+  //   <>
+  //     <h1 className={styles.radioHeader}>
+  //       Join As a Creative or Marketplace Seller
+  //     </h1>
+  //     <p className={styles.radioSubHeader}>
+  //       I plan to submit name ideas, Logo designs or sell names in Domain
+  //       Marketplace.
+  //     </p>
+  //   </>
+  // );
+
   return (
     <Formik
       initialValues={initialValues}
@@ -59,8 +53,18 @@ const SignUpForm = props => {
             <RadioGroup
               name='userRole'
               inputs={[
-                { value: 'buyer', children: inputBuyer },
-                { value: 'creative', children: inputCreative },
+                {
+                  value: 'buyer',
+                  title: 'Join As a Buyer',
+                  description:
+                    'I am looking for a Name, Logo or Tagline for my business, brand or product.',
+                },
+                {
+                  value: 'creative',
+                  title: 'Join As a Creative or Marketplace Seller',
+                  description:
+                    'I plan to submit name ideas, Logo designs or sell names in Domain Marketplace.',
+                },
               ]}
               className={styles.radioGroup}
             />

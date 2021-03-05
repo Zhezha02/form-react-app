@@ -1,29 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Field, ErrorMessage } from 'formik';
+import { ErrorMessage } from 'formik';
 import styles from './RadioGroup.module.scss';
 import cx from 'classnames';
+import RadioField from './RadioField';
+
+const createRadioInputs = (name, inputs) =>
+  inputs.map(input => <RadioField name={name} {...input} />);
 
 const RadioGroup = props => {
-  const createRadioInputs = (name, inputs) => {
-    const radioInputsArray = inputs.map(({ value, children }) => {
-      return (
-        <label className={styles.radioLabel}>
-          <Field
-            className={styles.radioBtn}
-            type='radio'
-            name={name}
-            value={value}
-          />
-          {children}
-        </label>
-      );
-    });
-    return radioInputsArray;
-  };
   const { name, inputs, className } = props;
+  console.log('!!!!1', inputs);
+  const labelClassNames = cx(styles.radioBtnContainer, className);
+
   return (
-    <label className={cx(styles.radioBtnContainer, className)}>
+    <label className={labelClassNames}>
       {createRadioInputs(name, inputs)}
       <ErrorMessage
         name={name}
@@ -39,7 +30,8 @@ RadioGroup.propTypes = {
   inputs: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
-      children: PropTypes.object,
+      title: PropTypes.string,
+      description: PropTypes.string,
     })
   ),
   name: PropTypes.string.isRequired,
